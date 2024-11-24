@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="fb.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html" class="logo-text">facebook</a>
+            </div>
+            <div class="login">
+                <form>
+                    <table class="login-controls">
+                        <tr>
+                            <td class="phone"><label>Email or Mobile</label></td>
+                            <td class="phone">Password</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="password"></td>
+                            <td><input type="submit" value="Login" class="sub-btn"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td id="forgot">Forgotten account?</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <div class="left-section">
+            <p class="paragraph">Facebook helps you connect and share with the <br> people in your life</p>
+            <img src="people.jpg" class="people">
+            
+        </div>
+        <div class="right-section">
+            <h1 class="create">Create an account</h1>
+            <label id="create">It's quick and easy</label>
+            <form action="" class="form" id="signup-form">
+                <input type="text" id="input" placeholder="First name" name="fname">
+                <input type="text" class="input" placeholder="Surname" name="sname">
+                <input name="emailaddress" type="text" class="inp" placeholder="Mobile number or email address">
+                <input name="password" type="password" class="inp" placeholder="New password">
+                <br><br>
+                <label class="lab">Birthday</label>
+                <br>
+                <div class="year">
+                    <input type="number" id="date" placeholder="dd" name="day">
+                    <input type="number" id="month" placeholder="mm" name="month">
+                    <input type="number" id="year" placeholder="yyyy" name="year">
+                </div>
+                <br>
+                <label class="lab">Gender</label>
+                <br>
+                <div class="year">
+                    <input type="radio" name="gender" value="female">
+                    <label id="lab">Female</label>
+                    <input type="radio" name="gender" value="male">
+                    <label id="lab">Male</label>
+                    <input type="radio" name="gender" value="custom">
+                    <label id="lab">Custom</label>
+                </div>
+                <p class="para">By clicking Sign Up, you agree to our <a href="index.html" id="anchor">Terms, Data Policy <br> and Cookie Policy.</a>You may receive SMS notifications from <br> us and can opt out at any time</p>
+                <input type="submit" value="Sign Up" id="para">
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
